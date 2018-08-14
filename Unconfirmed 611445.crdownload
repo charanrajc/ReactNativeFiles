@@ -1,0 +1,28 @@
+import React, { Component } from "react";
+import { View, StyleSheet } from "react-native";
+
+class FlexExamples extends Component {
+  render() {
+    return (
+    <View style={{flex: 1,flexDirection: "column"}}>
+       <View style = {{ backgroundColor: "red", height: 200 }}/>
+       <View style = {{ backgroundColor: "green", height: 200 }}/>
+       <View style={{ margin:1}}/>
+       <View style={{ flex:1,flexDirection: "column" }}>
+           <View style={{ flexWrap: "wrap",flexDirection:"row"}}>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+                <View style = {{ margin:1, backgroundColor: "blue", height: 90, width: 100}}/>
+            </View>
+        </View>
+    </View>
+    );
+  }
+}
+export default FlexExamples;

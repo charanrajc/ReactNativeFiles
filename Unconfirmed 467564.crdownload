@@ -1,0 +1,79 @@
+import React, { Component } from "react";
+import { View, StyleSheet } from "react-native";
+
+
+
+class FlexExamples extends Component {
+  render() {
+    return (
+    
+     
+       <View style = {{flex:1,flexDirection: "column"}}>
+            
+                <View style = {styles.redbox}/>
+             
+            
+              <View style = {styles.greenbox} />
+            
+        
+           <View style = {styles.container1}>
+            
+              <View style = {styles.bluebox}/>
+              <View style = {styles.bluebox} />
+              <View style = {styles.bluebox} />
+
+          </View>
+          <View style = {styles.container1}>
+            
+              <View style = {styles.bluebox}/>
+              <View style = {styles.bluebox} />
+              <View style = {styles.bluebox} />
+
+          </View>
+          <View style = {styles.container1}>
+            
+              <View style = {styles.bluebox}/>
+              <View style = {styles.bluebox} />
+              <View style = {styles.bluebox} />
+
+          </View>
+      
+        </View>
+      
+      
+  
+    );
+  }
+}
+const styles = StyleSheet.create({
+redbox: {
+  height:125,
+  backgroundColor:'red',
+},
+greenbox: {
+  height:125,
+  backgroundColor:'green',
+
+},
+container1: {
+  flexDirection:'row',
+  margin:1,
+  flexBasis:100
+},
+bluebox: {
+ flexBasis:100,
+ margin:1,
+ flexGrow:1,
+ backgroundColor:'blue'
+},
+
+
+
+
+
+})
+
+
+
+
+export default FlexExamples;
